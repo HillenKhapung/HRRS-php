@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Booking Form</title>
+  <style>
+    body {
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2cA2RXtMz-3Rf_qkF-AxEMpgRPz_r2uw_zPS3yFV_&s'); /* Replace 'your-hrss-art-image-url.jpg' with the URL of your HRSS art background image */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 400px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .booking-form {
+      text-align: left;
+    }
+
+    .booking-form label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .booking-form input[type="text"],
+    .booking-form input[type="date"],
+    .booking-form input[type="number"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .booking-form .btn {
+      display: block;
+      width: 100%;
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+    header {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 0;
+}
+
+/* Style for the navigation menu */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #e74c3c;
+}
+
+/* Style for the rightmost links (Edit Profile and Logout) */
+nav ul li:last-child a {
+  margin-left: auto; /* Push them to the right */
+}
+
+
+  </style>
+</head>
+<body>
+<header>
+    <nav>
+      <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="reservation.php">Reservations</a></li>
+        <li><a href="reviews.php">Reviews</a></li>
+        <li><a href="search1.php">search</a></li>
+        <li style="margin-left: auto;"><a href="edit_profile.php">Edit Profile</a></li>
+        <li><a href="logout.php">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <h1>Booking Form</h1>
+    <form action="booking.php" method="POST" class="booking-form">
+      <label for="Adate">Arrival Date</label>
+      <input type="date" name="Adate" id="Adate" required>
+      
+      <label for="Ddate">Departure Date</label>
+      <input type="date" name="Ddate" id="Ddate" required>
+      
+      <label for="nbeds">Number of Beds</label>
+      <input type="number" name="nbeds" id="nbeds" value="1">
+      
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
+
+

@@ -1,0 +1,86 @@
+/* styles.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f1f5f8;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.sidebar {
+  background-color: #3a4660;
+  color: #fff;
+  width: 250px;
+  padding: 20px;
+  height: 100vh;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  color: #e3e7f1;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  color: #fff;
+}
+
+.content {
+  background-color: #fff;
+  flex: 1;
+  padding: 20px;
+}
+
+.content h2 {
+  margin-bottom: 20px;
+}
+
+.table-container {
+  margin-top: 20px;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container th,
+.table-container td {
+  padding: 10px;
+  text-align: left;
+}
+
+.table-container th {
+  background-color: #3a4660;
+  color: #fff;
+}
+
+.table-container td {
+  background-color: #f1f5f8;
+}
+
+.table-container tr:nth-child(even) {
+  background-color: #fff;
+}
+
+.table-container tr:nth-child(odd) {
+  background-color: #f1f5f8;
+}

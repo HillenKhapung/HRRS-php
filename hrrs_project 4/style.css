@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5ebeb;
+    color: #444;
+}
+
+main {
+    width: 100%;
+    background: url("room.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px; /* Adjust the width as needed */
+    height: auto; /* This maintains the aspect ratio */
+    margin-right: 10px;
+}
+
+.title {
+    color: #ff7200;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+.menu ul li a:hover {
+    color: #ff7200;
+}
+
+section.hero {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+section.hero .content {
+    max-width: 800px;
+}
+
+section.hero h1 {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+section.hero .par {
+    font-size: 20px;
+    color: #f5ebeb;
+    line-height: 1.6;
+}
+
+section.features {
+    padding: 50px 0;
+}
+
+section.features .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section.features .card {
+    background-color: rgba(40, 105, 7, 0.85);
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+section.features .card h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+section.features .card p {
+    color: #f5ebeb;
+    font-size: 16px;
+}
+
+section.testimony-section {
+    background-color: #cb5c01;
+    padding: 50px 0;
+    text-align: center;
+}
+
+section.testimony-section .testimonial {
+    max-width: 600px;
+    margin: auto;
+}
+
+section.testimony-section .quote {
+    font-size: 24px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+section.testimony-section .author {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #525252c5;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    font-size: 12px;
+}
